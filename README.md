@@ -1,12 +1,19 @@
-# React + Vite
+#dicas para submit 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+`git init`
+> _inicia o repositório git local_
 
-Currently, two official plugins are available:
+`git add .`
+> _adiciona as mudanças ao stage_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ `git remote add origin https://github.com/Alissonacp/ColonyConnect.git`
+> _vincula o projeto com o repositório do GitHub_
 
-## Expanding the ESLint configuration
+`git checkout -b "nome-da-branch"`
+> _cria e muda para uma nova branch (melhor prática em colaboração)_
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`git commit -m "título da mudança"`
+> _cria o commit (localmente)_
+
+`git push -u origin "nome-da-branch"`
+> _envia o commit para o repositório remoto e cria a branch no GitHub_
