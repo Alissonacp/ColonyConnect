@@ -1,0 +1,21 @@
+:root {
+  --cor1: rgb(255, 191, 0);
+  --cor2: rgb(255, 204, 0);
+  --cor3: rgb(255, 230, 0);
+  --cor4: rgb(0, 0, 0);
+  --cor5: rgb(255, 255, 255);
+  --cor6: #858585;
+  --cor7: #63fa5d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+}
+/* barra de rolagem fixa no navegador para não perder o alinhamento de páginas sem rolagem  */

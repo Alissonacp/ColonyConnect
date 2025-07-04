@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8dvh;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 11dvh;
+}
+
+.container h1 {
+    color: var(--cor4);
+    font-size: 3dvh;
+    text-align: center;
+    margin-top: 5dvh;
+}
+
+.container form {
+    background-color: var(--cor5);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    padding-top: 8dvh;
+    padding-bottom: 5dvh;
+}
+
+.container form p {
+    color: var(--cor4);
+    padding-top: 3.5dvh;
+    margin-bottom: 0.6dvh;
+    font-size: 2dvh;
+}
+
+.container form input {
+    border-style: solid;
+    height: 4.8dvh;
+    border-radius: 0.7dvh;
+    background-color: transparent;
+    border-width: 0.1dvh;
+    text-align: left;
+    padding-left: 1dvh;
+    outline: none;
+}
+
+.button {
+    width: 100%;
+    margin-top: 20dvh;
+    margin-bottom: 10dvh;
+}
+
+.loginButton {
+    color: var(--cor5);
+    margin-bottom: 3dvh;
+    border-radius: 3dvh;
+    background-color: var(--cor3);
+    height: 5dvh;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    font-size: 2dvh;
+}
+
+.loginButton:hover {
+    cursor: pointer;
+}
+
+.button p {
+    text-align: center;
+    font-size: 1.8dvh;
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-size: 1.8dvh;
+}
+
+.button a:hover {
+    opacity: 0.6;
+}
