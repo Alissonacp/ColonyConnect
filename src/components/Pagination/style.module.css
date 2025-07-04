@@ -1,0 +1,61 @@
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    color: black;
+    float: left;
+    padding: 16px 20px;
+    text-decoration: none;
+    margin: 8px;
+    border: 0.5px solid;
+    border-radius: 8px;
+}
+
+.active {
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 8px;
+}
+
+.link:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 8px;
+
+}
+
+.pagination p {
+margin: 20px;
+padding-top:20px;
+}
+
+.seta_esquerda {
+    color: black;
+    float: left;
+    padding: 16px 20px;
+    text-decoration: none;
+    margin-right: 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+.seta_esquerda:hover {
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+
+.seta_direita {
+    color: black;
+    float: left;
+    padding: 16px 20px;
+    text-decoration: none;
+    margin-left: 24px;
+    border: none;
+    border-radius: 8px;
+}
+.seta_direita:hover {
+    background-color: #ddd;
+    border-radius: 8px;
+}

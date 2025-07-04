@@ -1,0 +1,11 @@
+.linhadivisoria {
+    display: flex;
+        justify-content: space-between;
+        padding-bottom: 4px;
+        border-bottom: 0.5px solid var(--cor3);
+        text-align: right;
+        align-items: center;
+}
+.linhadivisoria h4 {
+    max-width: 120px;
+}

@@ -1,0 +1,48 @@
+.container {
+  background-color: rgb(254, 252, 255);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container h1 {
+  color: var(--cor4);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 8.8dvh;
+}
+
+.container form {
+  background-color: var(--cor5);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 5dvh;
+}
+
+.container h4 {
+  font-weight: normal;
+  color: rgb(135, 141, 151);
+  padding-bottom: 36px;
+}
+
+.container p {
+  margin-bottom: 8px;
+}
+
+.container input {
+  padding: 12px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.observacoes {
+  height: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  resize: none;
+  overflow: auto;
+}
