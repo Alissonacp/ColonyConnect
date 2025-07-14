@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import BurgIcon from '../../assets/Hamburger.png';
 
-export default function navBar() {
+export default function NavBar() {
     return (
         <nav className={Style.navBar}>
             <Link to={'/homepage'}>

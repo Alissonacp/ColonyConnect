@@ -5,7 +5,8 @@ import Dropdown from "../../components/Dropdown";
 import RadioButton from "../../components/RadioButton";
 import MultiSelect from "../../components/Multiselect";
 import Input from "../../components/Input";
-import Style from './style.module.css';
+import Style from "./style.module.css";
+import NavBar from "../../components/NavBar";
 
 export default function CadInspecaoPage() {
   const [apiarios, setApiarios] = useState([]);
@@ -139,118 +140,123 @@ export default function CadInspecaoPage() {
   };
 
   return (
-    <div className={Style.containerGeral}>
-      <div className={Style.header}>
-        <h1>Inspeção</h1>
+    <div>
+      <div>
+        <NavBar />
       </div>
-      <form onSubmit={handleSubmit} className={Style.forms}>
-        <Dropdown
-          label="Apiário *"
-          items={apiarios.map((a) => ({ label: a.nome, value: a.id }))}
-          selected={apiarioSelecionado}
-          onChange={handleApiarioChange}
-        />
-
-        <Dropdown
-          label="Colmeia *"
-          items={colmeias}
-          selected={colmeiaSelecionada}
-          onChange={setColmeiaSelecionada}
-        />
-
-        <div className="form-group">
-          <label>Data da Inspeção *</label>
-          <input
-            type="date"
-            value={dataInspecao}
-            onChange={(e) => setDataInspecao(e.target.value)}
+      <div className={Style.containerGeral}>
+        <div className={Style.header}>
+          <h1>Inspeção</h1>
+        </div>
+        <form onSubmit={handleSubmit} className={Style.forms}>
+          <Dropdown
+            label="Apiário *"
+            items={apiarios.map((a) => ({ label: a.nome, value: a.id }))}
+            selected={apiarioSelecionado}
+            onChange={handleApiarioChange}
           />
-        </div>
 
-        <RadioButton
-          label="Saúde da Colmeia *"
-          options={opcoesSaude}
-          selected={saude}
-          onChange={setSaude}
-        />
+          <Dropdown
+            label="Colmeia *"
+            items={colmeias}
+            selected={colmeiaSelecionada}
+            onChange={setColmeiaSelecionada}
+          />
 
-        <RadioButton
-          label="Rainha encontrada? *"
-          options={opcoesSimNao}
-          selected={temRainha}
-          onChange={setTemRainha}
-        />
+          <div className="form-group">
+            <label>Data da Inspeção *</label>
+            <input
+              type="date"
+              value={dataInspecao}
+              onChange={(e) => setDataInspecao(e.target.value)}
+            />
+          </div>
 
-        <RadioButton
-          label="Postura da Rainha *"
-          options={opcoesSimNao}
-          selected={posturaRainha}
-          onChange={setPosturaRainha}
-        />
+          <RadioButton
+            label="Saúde da Colmeia *"
+            options={opcoesSaude}
+            selected={saude}
+            onChange={setSaude}
+          />
 
-        <Input
-          label="Quantidade de quadros com crias"
-          placeholder="Ex: 4"
-          value={quadros}
-          onChange={setQuadros}
-        />
+          <RadioButton
+            label="Rainha encontrada? *"
+            options={opcoesSimNao}
+            selected={temRainha}
+            onChange={setTemRainha}
+          />
 
-        <RadioButton
-          label="Mel *"
-          options={estados}
-          selected={estadoMel}
-          onChange={setEstadoMel}
-        />
+          <RadioButton
+            label="Postura da Rainha *"
+            options={opcoesSimNao}
+            selected={posturaRainha}
+            onChange={setPosturaRainha}
+          />
 
-        <RadioButton
-          label="Pólen *"
-          options={estados}
-          selected={estadoPolen}
-          onChange={setEstadoPolen}
-        />
+          <Input
+            label="Quantidade de quadros com crias"
+            placeholder="Ex: 4"
+            value={quadros}
+            onChange={setQuadros}
+          />
 
-        <MultiSelect
-          label="Ocorrência de doença *"
-          options={opcoesDoencas}
-          selected={doencasSelect}
-          onChange={setDoencasSelect}
-        />
+          <RadioButton
+            label="Mel *"
+            options={estados}
+            selected={estadoMel}
+            onChange={setEstadoMel}
+          />
 
-        <RadioButton
-          label="População da colmeia *"
-          options={tamanhosPopulacao}
-          selected={tamanhoPopulacao}
-          onChange={setTamanhoPopulacao}
-        />
+          <RadioButton
+            label="Pólen *"
+            options={estados}
+            selected={estadoPolen}
+            onChange={setEstadoPolen}
+          />
 
-        <Input
-          label="Manejos realizados"
-          placeholder="Ex: troca de cera"
-          value={manejosRealizados}
-          onChange={setManejosRealizados}
-        />
+          <MultiSelect
+            label="Ocorrência de doença *"
+            options={opcoesDoencas}
+            selected={doencasSelect}
+            onChange={setDoencasSelect}
+          />
 
-        <Input
-          multiline
-          label="Observações"
-          placeholder="Observações adicionais..."
-          value={observacoes}
-          onChange={setObservacoes}
-        />
+          <RadioButton
+            label="População da colmeia *"
+            options={tamanhosPopulacao}
+            selected={tamanhoPopulacao}
+            onChange={setTamanhoPopulacao}
+          />
 
-        <div className={Style.formActions}>
-          <button type="submit" className={Style.salvar}>
-            Salvar
-          </button>
-          <button
-            type="button"
-            className={Style.limpar}
-            onClick={() => window.location.reload()}
-          >
-            Limpar
-          </button>
-        </div>
-      </form>
+          <Input
+            label="Manejos realizados"
+            placeholder="Ex: troca de cera"
+            value={manejosRealizados}
+            onChange={setManejosRealizados}
+          />
+
+          <Input
+            multiline
+            label="Observações"
+            placeholder="Observações adicionais..."
+            value={observacoes}
+            onChange={setObservacoes}
+          />
+
+          <div className={Style.formActions}>
+            <button type="submit" className={Style.salvar}>
+              Salvar
+            </button>
+            <button
+              type="button"
+              className={Style.limpar}
+              onClick={() => window.location.reload()}
+            >
+              Limpar
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

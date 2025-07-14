@@ -1,5 +1,5 @@
 .containerGeral {
-   margin: auto;
+  margin: auto;
   padding: 1.5rem;
 }
 
@@ -7,11 +7,13 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  text-align: center;
+  justify-content: center;
+
   margin-bottom: 1.5rem;
 }
 
 .header h1 {
-  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -31,11 +33,9 @@
 .form-button {
   flex: 1;
   padding: 0.8rem;
-  font-weight: 600;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
 }
 
 .salvar {
@@ -47,4 +47,3 @@
   background-color: var(--cor6);
   color: var(--cor4);
 }
-
