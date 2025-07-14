@@ -1,0 +1,31 @@
+.container {
+    max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+.container h1 {
+    text-align: center;
+}
+.forms {
+    justify-content: flex-start;
+   
+    margin-top: 2rem;
+
+    
+}
+.forms input {
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.7dvh;
+    border-width: 0.1dvh;
+}
+    
+.link {
+text-decoration: none;
+text-align: center;
+font-weight: bolder;
+
+
+}

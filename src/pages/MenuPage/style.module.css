@@ -1,0 +1,53 @@
+.container {
+  padding: 3dvh 5dvh;
+  width: 100%;
+  
+}
+
+.buttonClose {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 7dvh;
+}
+.list {
+  list-style: none;
+  border-bottom: 0.1dvh solid var(--cor4);
+  
+}
+
+.link {
+  text-decoration: none;
+  width: 1rem;
+  
+  /* background-color: aqua; */
+}
+
+.link:visited {
+  text-decoration: none;
+  color: var(--cor4);
+}
+
+.itemLink {
+  text-decoration: none;
+  color: var(--cor4);
+  font-size: 2dvh;
+  padding-left: 1dvh;
+  padding-bottom: 2dvh;
+  
+}
+.itemLink img {
+    padding-top: 10px;
+  
+  
+  align-items: center;
+  margin-right: 10px;
+}
+.button {
+  background: none;
+  width: 2rem;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

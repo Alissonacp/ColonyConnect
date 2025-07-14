@@ -1,0 +1,18 @@
+.container {
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--cor6);
+  font-size: 1rem;
+  background-color: var(--cor5);
+}

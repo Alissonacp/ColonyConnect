@@ -1,0 +1,50 @@
+.link {
+  text-decoration: none;
+  color: var(--cor4);
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--cor6);
+  border-radius: 1.3dvh;
+  overflow: hidden;
+  margin-bottom: 1.2dvh;
+  background-color: var(--cor5);
+}
+.card:hover {
+  transform: scale(1.001);
+  opacity: 0.8;
+}
+
+.esquerda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor2);
+  padding: 1dvh;
+}
+
+.caixa {
+  background-color: var(--cor2);
+  width: 4dvh;
+}
+
+.details {
+  width: 1.5dvh;
+  height: 2dvh;
+}
+
+.centro {
+  flex: 1;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}

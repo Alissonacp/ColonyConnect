@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5dvh;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 11dvh;
+}
+
+.container h1 {
+    color: var(--cor4);
+    font-size: 3dvh;
+    text-align: center;
+    margin-top: 5dvh;
+}
+
+.container form {
+    background-color: var(--cor5);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.container form p {
+    color: var(--cor4);
+    padding-top: 3.5dvh;
+    margin-bottom: 0.6dvh;
+    font-size: 2dvh;
+}
+
+.container form input {
+    border-style: solid;
+    height: 4.8dvh;
+    border-radius: 0.7dvh;
+    background-color: transparent;
+    border-width: 0.1dvh;
+    text-align: left;
+    padding-left: 1dvh;
+    outline: none;
+}
+
+.checkbox {
+    width: 1.8dvh;
+    vertical-align: middle;
+    margin-right: 0.5dvh;
+    cursor: pointer;
+}
+
+.userTerm p {
+    text-align: center;
+    font-size: 2dvh;
+}
+
+.userTerm a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-size: 2dvh;
+}
+
+.userTerm a:hover {
+    opacity: 0.6;
+}
+
+.button {
+    width: 100%;
+    margin-top: 4dvh;
+    margin-bottom: 3dvh;
+}
+
+.cadButton {
+    color: var(--cor5);
+    border-radius: 3dvh;
+    background-color: var(--cor3);
+    height: 5dvh;
+    width: 100%;
+    border: none;
+}
+
+.cadButton:hover {
+    cursor: pointer;
+}
+
+.button p {
+    text-align: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-size: 2dvh;
+}
+
+.button a:hover {
+    opacity: 0.6;
+}

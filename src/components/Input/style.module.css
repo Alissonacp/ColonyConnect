@@ -1,0 +1,22 @@
+    .container {
+  margin-bottom: 1.2rem;
+}
+
+.label {    
+  margin-bottom: 0.5rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;  
+}
+
+.input {
+  padding: 10px; 
+  width: 100%;
+  border-radius: 5px;
+
+
+
+}

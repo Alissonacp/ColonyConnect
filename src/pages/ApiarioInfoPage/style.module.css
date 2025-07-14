@@ -1,0 +1,44 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.infoBox {
+  padding-top: 2dvh;  
+  margin-bottom: 2rem;  
+}
+.infoBox p {
+  margin-bottom: 1dvh;
+}
+.botoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button{
+  padding: 0.8dvh ;
+  border-radius: 2dvh;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.edit {
+  background-color:var(--cor2);
+  color: white;
+}
+.cancel {
+  background-color:var(--cor6);
+  color: white;
+}
+img {  
+  max-width: 40dvh;
+  border-radius: 2dvh;
+}
+.delete {
+  background-color: #FF5D52;
+  color: white;
+}

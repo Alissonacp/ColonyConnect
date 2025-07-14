@@ -1,0 +1,59 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2dvh;
+}
+
+.link {
+    color: black;
+    padding: 1.2dvh 1.8dvh;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 1dvh;
+    border: 0.1dvh solid;
+    border-radius: 1dvh;
+}
+
+.active {
+    background-color: var(--cor3);
+    color: white;
+    padding: 1.2dvh 2dvh;
+    border-radius: 1dvh;
+}
+
+.link:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 1dvh;
+
+}
+
+.pagination p {
+    margin: 0.1dvh;
+}
+
+.seta_esquerda {
+    color: black;
+    float: left;
+    padding-left: 1dvh;
+    text-decoration: none;
+    border: none;
+    border-radius: 1dvh;
+}
+
+.seta_esquerda:hover {
+    background-color: #ddd;
+}
+
+.seta_direita {
+    color: black;
+    float: left;
+    padding-right: 1dvh;
+    text-decoration: none;
+    border: none;
+}
+
+.seta_direita:hover {
+    background-color: #ddd;
+    border-radius: 8px;
+}

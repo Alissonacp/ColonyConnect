@@ -1,0 +1,17 @@
+.container {
+    padding-bottom: 2dvh;
+}
+
+.linhadivisoria {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5dvh;
+    padding-bottom: 1.3dvh;
+    border-bottom: 0.2dvh solid var(--cor3);
+    text-align: right;
+    align-items: center;
+}
+
+.linhadivisoria h4 {
+    max-width: 120px;
+}

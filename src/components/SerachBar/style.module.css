@@ -1,0 +1,36 @@
+.pesquisar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6dvh;
+  border: solid;
+  border-width: 0.1dvh;
+  border-radius: 0.7dvh;
+}
+
+.pesquisar input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  padding-left: 1dvh;
+  outline: none;
+}
+
+.pesquisar button {
+  height: 100%;
+  padding-right: 2dvh;
+  padding-left: 2dvh;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pesquisar button img {
+  padding-top: 0.6dvh;
+  width: 3dvh;
+  
+}
